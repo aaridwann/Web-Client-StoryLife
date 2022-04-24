@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Plus+Jakarta+Sans:ital,wght@1,200&display=swap');
+// Warna
+$hijauTua: #6B705C;
+$white: #ffffff;
+
+$bgContainer : linear-gradient(62deg, #B7B7A4 0%, #FFFFFF 100%);
+// Font
+$title : 'Ms Madi',
+cursive;
+$title2: 'Plus Jakarta Sans',
+sans-serif;
+
+.container {
+    width: auto;
+    height: 1000px;
+    background-image: linear-gradient(62deg, #B7B7A4 0%, #FFFFFF 100%);
+    padding: 4px;
+    margin: auto;
+
+}
+
+.head {
+    width: auto;
+    margin: auto;
+    height: 210px;
+    background-color: $hijauTua;
+    border-radius: 0px 0px 180px 180px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+
+    h1 {
+        color: white;
+        margin-top: -30px;
+        font-size: 60px;
+        font-family: $title;
+        font-weight: lighter;
+    }
+
+    p {
+        margin-top: -30px;
+        color: $white;
+        font-family: $title2;
+        font-weight: lighter;
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+}
+
+.name {
+    color: brown;
+}
+
+.form {
+    width: 300px;
+    height: fit-content;
+    padding: 0px 0px 50px 0px;
+    margin: 6px;
+    border-radius: 50px;
+    background-color: rgba($color: $hijauTua, $alpha: 0.6);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: $white;
+
+    &:hover {
+        background-color: rgba($color: $hijauTua, $alpha: 1);
+
+    }
+
+    input {
+        width: 200px;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        text-align: center;
+    }
+
+    button {
+        width: 80px;
+        height: 50px;
+        left: 50%;
+        border: none;
+        margin: 5px
+    }
+
+    .btn-submit {
+        border-radius: 50px;
+        margin-top: 10px;
+        width: 100px;
+        height: 40px;
+        font-family: $title2;
+        font-weight: bold;
+        color: $hijauTua;
+        border: none;
+        background-color: $white;
+    }
+
+    .sign {
+        width: 200px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba($color: $white, $alpha: 0.5);
+        
+        p {
+            color: $white
+        }
+
+        img {
+            justify-self: flex-start;
+            margin-left: -50px;
+        }
+        &:hover {
+            background-color: rgba($color: $white, $alpha: 1);
+            p{
+                color:$hijauTua
+            }
+        }
+    }
+
+}
+
+@media (min-width:500px) {
+    .container{
+        border-radius: 110px 110px 0px 0px;
+    }
+    .head {
+        width:100%;
+        height: 200px;
+        border-radius: 100px 100px 0px 0px;
+        margin-bottom: 80px;
+        h1{
+            font-size: 80px;
+        }
+        p{
+            font-size: medium;
+        }
+    }
+    .container {
+        width: 700px;
+    }
+    .form{
+        width: 400px;
+        flex-direction: row;
+        input{
+            width: 300px;
+        }
+    }
+}
